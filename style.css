@@ -1,0 +1,82 @@
+body{
+    background-image: url(images/casino.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dice-container{
+    border: 8px solid rgb(148, 120, 64);
+    background-color: rgb(40, 104, 64);
+    height: 440px;
+    display: flex;
+    margin: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px 4px rgb(56, 56, 56);
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    padding: 16px;
+    border: 1px solid rgb(64, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(256, 0, 0, 88%);
+    width: 64px;
+    height: 64px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 2px rgb(56, 56, 56);
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 .one, .box2 .one, .box3 .one, .box4 .one, .box5 .one, .box6 .one{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 50%;
+}
+
+.box2, .box3, .box4, .box5, .box6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.theTwo, .box3 .theTwo{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.box3 .threeTwo, .box5 .five{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.box2{
+    order: 4;
+}
+
+.box4{
+    order: 3;
+}
